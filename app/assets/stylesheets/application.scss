@@ -86,8 +86,18 @@ footer {
 }
 
 /* Services */
+.service_photos{
+	width: 24%;
+	height: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	opacity: 0.6;
+}
 
-.service_photos {
+.selected_service_photo {
 	width: 24%;
 	height: 100%;
 	margin-left: 0;
@@ -137,6 +147,13 @@ footer {
 	margin-right: 10%;
 	text-indent: 50px;
 	font-family: serif;
-
 }
+.service_overview{
+	display: none;
+}
+
+
+
+/*experiment */
+
 
