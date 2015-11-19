@@ -1,0 +1,42 @@
+
+
+
+html { 
+  background: url(red_background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://media02.hongkiat.com/oversized-background-image-design/bg.jpg', sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://media02.hongkiat.com/oversized-background-image-design/bg.jpg', sizingMethod='scale');
+}
+
+#background-pallette {
+	position: relative;
+    top: 55px;
+    bottom: 50px;
+    width: 80%;
+    background-color: black;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#background-screen {
+	position: relative;
+	background-color: white;
+	top: 100px;
+	width: 80%;
+	margin-right: 10%;
+	margin-left: 10%;
+	bottom: -100;
+
+
+}
+
+p {
+	color: black;
+}
+
+footer {
+	height: 100px;
+}
