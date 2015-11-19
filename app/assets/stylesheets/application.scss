@@ -33,10 +33,10 @@ body {
 #background-screen{
 	width: auto;	
 	background-color: #FFFFF2;
-	margin-bottom: 20px;
-	margin-right: 20px;
-	margin-left: 20px;
-	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
 }
 
 /* Scrolling Photos */
@@ -51,17 +51,17 @@ p {
 	color: black;
 }
 /* Header */
-
-ul {
+#header_container{
 	margin-top: 20px;
 	text-align: center;
 }
 
-li {
+
+#header_list li {
 	display: inline;
-	margin-left: 50px;
-	margin-right: 50px;
 	font-size: 20pt;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 a{
@@ -83,5 +83,60 @@ footer {
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+
+/* Services */
+
+.service_photos {
+	width: 24%;
+	height: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+
+
+}
+
+#services_container{
+	margin-top: 30px;
+	width: 100%;
+
+	/*
+	border-color: gray;
+	border-width: 5px;
+	border-style: solid;
+	border-radius: 25px;
+	padding-top: 10px;
+	*/
+	
+}
+
+#services_container ul li{
+	display: inline;
+}
+
+#services_container ul {
+	height: 175px;
+}
+
+/* Service Descriptions */
+
+.service_head {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 10%;
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 35pt;
+}
+
+.service_description {
+	margin-left: 10%;
+	margin-right: 10%;
+	text-indent: 50px;
+	font-family: serif;
+
 }
 
