@@ -11,9 +11,11 @@
 		<%= render 'layouts/scrolling_pictures' %>
 		<%= render 'layouts/header' %>
 		<%= render 'layouts/services_photos' %>
-
-		<%= render 'service_descriptions/warehousing' %>
-		<%= render 'service_descriptions/transloading' %>
+		<% services = ["warehousing", "transloading"] %>
+		<% for i in 0..1 %>
+			<%= render "service_descriptions/#{services[i]}" %>
+		<% end %>
+		
 
 
 
