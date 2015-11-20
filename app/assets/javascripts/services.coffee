@@ -1,4 +1,6 @@
 $(document).on "page:change", ->
+	$('.service_overview').fadeOut(1)
+	$('#warehouse_container').fadeIn(1)
 	$('#warehouse').click ->
 		$('.service_overview').fadeOut(1)
 		$('#warehouse_container').fadeIn(1)
@@ -13,7 +15,7 @@ $(document).on "page:change", ->
 		$('.service_overview').fadeOut(1)
 		$('#drayage_container').fadeIn(1)
 
-###
+
 $(document).on "page:change", ->
 	$('#stripping').click ->
 		$('.service_overview').fadeOut(1)
@@ -27,16 +29,15 @@ $(document).on "page:change", ->
 $(document).on "page:change", ->
 	$('#rail_access').click ->
 		$('.service_overview').fadeOut(1)
-		$('#rail_access').fadeIn(1)
+		$('#rail_access_container').fadeIn(1)
 
 $(document).on "page:change", ->
 	$('#welding').click ->
 		$('.service_overview').fadeOut(1)
-		$('#welding').fadeIn(1)
+		$('#welding_container').fadeIn(1)
 
 $(document).on "page:change", ->
 	$('#trucking').click ->
 		$('.service_overview').fadeOut(1)
-		$('#trucking').fadeIn(1)
+		$('#trucking_container').fadeIn(1)
 
-###

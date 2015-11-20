@@ -1,4 +1,5 @@
-
+<% provide(services = ["warehousing", "transloading", "drayage",
+	"stripping", "packaging", "rail_access", "welding", "trucking"]) %>
 
 <div id="background-pallette">
 	<div id="background-screen">
@@ -11,8 +12,8 @@
 		<%= render 'layouts/scrolling_pictures' %>
 		<%= render 'layouts/header' %>
 		<%= render 'layouts/services_photos' %>
-		<% services = ["warehousing", "transloading"] %>
-		<% for i in 0..1 %>
+		
+		<% for i in 0..7 %>
 			<%= render "service_descriptions/#{services[i]}" %>
 		<% end %>
 		
