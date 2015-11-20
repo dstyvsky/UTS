@@ -8,12 +8,12 @@ $( document ).ready(function() {
 
   	$('html, body').animate({
         scrollTop: $("#header_container").offset().top
-    }, 2000);
+    }, 800);
   })
 
   $('#services_button').click(function(){
 	  $('html, body').animate({
 	  	   scrollTop: $('#header_container').offset().top
-	  	}, 2000);
+	  	}, 800);
 	})
 });
