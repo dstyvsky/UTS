@@ -16,4 +16,19 @@ $( document ).ready(function() {
 	  	   scrollTop: $('#header_container').offset().top
 	  	}, 800);
 	})
+
+
+  $('#about_us_button').click(function(){
+    $('#all_about_us_container').removeClass('faded_out');
+    $('.selected').addClass('faded_out');
+    $('.selected').removeClass('selected');
+    $('#all_about_us_container').addClass('selected');
+  })
+  $('#services_button').click(function(){
+    $('#all_services_container').removeClass('faded_out');
+    $('.selected').addClass('faded_out');
+    $('.selected').removeClass('selected');
+    $('#all_services_container').addClass('selected');
+  })
+
 });

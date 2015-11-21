@@ -11,11 +11,21 @@
 
 		<%= render 'layouts/scrolling_pictures' %>
 		<%= render 'layouts/header' %>
-		<%= render 'layouts/services_photos' %>
-		
-		<% for i in 0..7 %>
-			<%= render "service_descriptions/#{services[i]}" %>
-		<% end %>
+
+		<div id="all_services_container" class='selected'>
+			<%= render 'layouts/services_photos' %>
+			
+			<% for i in 0..7 %>
+				<%= render "service_descriptions/#{services[i]}" %>
+			<% end %>
+		</div>
+
+
+		<div id="all_about_us_container" class='faded_out'>
+			<%= render 'layouts/about_us' %>
+		</div>
+
+
 		
 
 
