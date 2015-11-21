@@ -1,4 +1,6 @@
 $( document ).ready(function() {
+
+
   $('img').click(function(){
   	$('.selected_service_photo').addClass('service_photos');
   	$('.selected_service_photo').removeClass('selected_service_photo');
@@ -50,4 +52,10 @@ $( document ).ready(function() {
     $('#all_location_container').addClass('selected');
   })
 
+
+
+ 
 });
+
+
+
