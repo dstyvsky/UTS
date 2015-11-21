@@ -171,9 +171,19 @@ footer {
 /* Map */
 
 #map_holder {
-	margin-top: 30px;
+	margin-top: 60px;
 	text-align: center;
+	display: inline;
+	width: 100%;
+}
 
+#first_map{
+	width: 49%;
+	float: left;
+}
+#second_map{
+	width:49%;
+	float: right;
 }
 
 
