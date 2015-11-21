@@ -13,7 +13,7 @@
 		<%= render 'layouts/header' %>
 
 		<div id="all_services_container" class='selected'>
-			<%= render 'layouts/services_photos' %>
+			<%= render 'tabs/services_photos' %>
 			
 			<% for i in 0..7 %>
 				<%= render "service_descriptions/#{services[i]}" %>
@@ -22,10 +22,20 @@
 
 
 		<div id="all_about_us_container" class='faded_out'>
-			<%= render 'layouts/about_us' %>
+			<%= render 'tabs/about_us' %>
 		</div>
 
+		<div id="all_recent_news_container" class="faded_out">
+			<%= render 'tabs/recent_news' %>
+		</div>
 
+		<div id="all_contact_container" class="faded_out">
+			<%= render 'tabs/contact' %>
+		</div>
+
+		<div id="all_location_container" class="faded_out">
+			<%= render 'tabs/location' %>
+		</div>
 		
 
 

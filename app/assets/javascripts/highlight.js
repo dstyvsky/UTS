@@ -31,4 +31,23 @@ $( document ).ready(function() {
     $('#all_services_container').addClass('selected');
   })
 
+  $('#recent_news_button').click(function(){
+    $('#all_recent_news_container').removeClass('faded_out');
+    $('.selected').addClass('faded_out');
+    $('.selected').removeClass('selected');
+    $('#all_recent_news_container').addClass('selected');
+  })
+  $('#contact_button').click(function(){
+    $('#all_contact_container').removeClass('faded_out');
+    $('.selected').addClass('faded_out');
+    $('.selected').removeClass('selected');
+    $('#all_contact_container').addClass('selected');
+  })
+  $('#location_button').click(function(){
+    $('#all_location_container').removeClass('faded_out');
+    $('.selected').addClass('faded_out');
+    $('.selected').removeClass('selected');
+    $('#all_location_container').addClass('selected');
+  })
+
 });
