@@ -3,7 +3,17 @@
 
 /*backdrop */
 
+html, body{
+	height: 100%;
+	width: 100%;
+
+
+}
+
+
 body { 
+
+	
 
   background: url(red_background.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -12,39 +22,28 @@ body {
   background-size: cover;
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://media02.hongkiat.com/oversized-background-image-design/bg.jpg', sizingMethod='scale')";
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://media02.hongkiat.com/oversized-background-image-design/bg.jpg', sizingMethod='scale');
-}
-
-#push_down{
-	position:absolute;
-	width: 100%;
-}
-/*
-#background-pallette {
-	position: relative;
-	margin-top: 20px;
-	width:90%;
-	margin-left: auto;
-	margin-right: auto;
-	overflow:hidden;
-	float:center;
-	background-color: black;
-
 
 }
-*/
+
+
+
 
 #background-screen{
-	width: auto;	
+	position: absolute;
+	width: 90%;	
 	background-color: #FFFFF2;
 	padding-bottom: 50px;
-	margin-bottom: 5px;
 	margin-right: 5%;
 	margin-left: 5%;
 	margin-top: 10px;
 	border-style: solid;
 	border-color: black;
 	border-width: 5px;
-	clear: both;
+	min-height: 95%;
+	height: auto;
+
+
+
 
 }
 /*
@@ -69,6 +68,10 @@ p {
 	color: black;
 }
 /* Header */
+hr{
+	margin-bottom: 50px;
+}
+
 #header_container{
 	margin-top: 20px;
 	text-align: center;
@@ -82,7 +85,7 @@ p {
 	margin-right: 4%;
 }
 
-a{
+li a{
 	color: black;
 	&:hover{
 		color: black;
@@ -235,4 +238,52 @@ hr {
 
 #all_location_container{
 	overflow: auto;
+}
+
+/* Contact */
+
+#contact_left{
+	float: left;
+	text-align: center;
+	width: 45%;
+	margin-left:5%;
+
+}
+
+#contact_right{
+
+	float: right;
+	text-align: center;
+	width: 45%;
+	margin-right:5%;
+
+}
+
+.row{
+	width: 85%;
+	margin: auto;
+}
+#contact_message{
+	height: 350px;
+	width: 100%;
+}
+
+#contact_container div div p{
+	font-size: 18pt;
+}
+
+#contact_container h3 {
+	font-size: 25pt;
+	margin-bottom: 50px;
+}
+
+#contact_container div div a{
+	font-size: 16pt;
+}
+
+h4{
+	clear: both;
+	text-align: center;
+	font-size: 20pt;
+	margin-top: 70px;
 }
