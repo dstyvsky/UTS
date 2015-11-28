@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
-  root 'static_pages#home'
+  root                     'static_pages#services'
+  get   'contacts'     =>  'contacts#new'
+  get   'recent_news'  =>  'static_pages#recent_news'
+  get   'about_us'     =>  'static_pages#about_us'
+  get   'location'     =>  'static_pages#location'
+
+  resources "contacts", only: [:new, :create]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

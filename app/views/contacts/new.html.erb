@@ -1,0 +1,31 @@
+<div>
+  <p>
+    Baltimore Phone / Fax<br>
+    Toll Free: (866) 348-2030<br> 
+    Local: (410) 388-1595<br>
+    Fax: (410) 477-2577
+  </p>
+</div>
+<div>
+  <p>
+    South Carolina Phone/Fax<br>
+    Toll Free: (877) 343-9435<br>
+    Fax: (410) 477-2577
+  </p>
+</div>
+
+
+<div align="center">
+  <h3>Send A message to Us</h3>
+
+  <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+    <%= f.input :name, :required => true %>
+    <%= f.input :email, :required => true %>
+    <%= f.input :message, :as => :text, :required => true %>
+    
+    <div>
+      </br>
+      <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+    </div>
+  <% end %>
+</div>
