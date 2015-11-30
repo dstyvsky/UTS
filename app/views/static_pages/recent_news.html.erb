@@ -5,3 +5,12 @@ Recent News
 <% else %>
 	Please <%= link_to "log in", login_path %>
 <% end %>
+
+<div class="col-md-8">
+    <% if Blogpost.any? %>
+      <h3>Recent News (<%= Blogpost.count %>)</h3>
+      <ol class="blogposts">
+        <%= render Blogpost.all %>
+      </ol>
+    <% end %>
+ </div>
