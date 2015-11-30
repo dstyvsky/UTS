@@ -52,7 +52,7 @@ Rails.application.configure do
     authentication: "login",
     enable_starttls_auto: true,
     user_name: 'dstyvsky@gmail.com',
-    password: ENV_PASS
+    password: 'RunnersHigh7'
   }
 
 
