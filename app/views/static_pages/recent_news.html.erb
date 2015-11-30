@@ -2,6 +2,17 @@ Recent News
 
 <% if logged_in? %>
 	Logged in do you want to <%= link_to "logout", logout_path, method: "delete" %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= render 'shared/user_info' %>
+      </section>
+      <section class="blogpost_form">
+        <%= render 'shared/blogpost_form' %>
+      </section>
+    </aside>
+  </div>
+
 <% else %>
 	Please <%= link_to "log in", login_path %>
 <% end %>
