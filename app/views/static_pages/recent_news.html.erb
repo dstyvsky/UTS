@@ -1,7 +1,7 @@
 Recent News
 
 <% if logged_in? %>
-	Logged in do you want to <%= link_to "logout", logout_path %>
+	Logged in do you want to <%= link_to "logout", logout_path, method: "delete" %>
 <% else %>
 	Please <%= link_to "log in", login_path %>
 <% end %>
