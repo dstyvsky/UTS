@@ -1,11 +1,20 @@
 <div id="services_container">
 	<ul id="first_four_photos">
-		<li><%= image_tag("warehouse.jpg", id: "warehouse", class: "selected_service_photo") %></li>
+		<li id="test">
+			<%= image_tag("warehouse.jpg", id: "warehouse", class: "selected_service_photo") %>
+	
+		</li>
 		<li><%= image_tag("drayage.jpg", id: "drayage", class: "service_photos") %></li>
 		<li><%= image_tag("stripping.jpg", id: "stripping", class: "service_photos") %></li>
 		<li><%= image_tag("packaging.jpg", id: "packaging", class: "service_photos") %></li>
 	</ul>
-	<ul>
+	<ul id="service_names">
+		<div><li>Warehousing</li></div>
+		<div><li>Warehousing</li></div>
+		<div><li>Warehousing</li></div>
+		<div><li>Warehousing</li></div>
+	</ul>
+	<ul id="last_four_photos">
 		<li><%= image_tag("transloading.jpg", id: "transloading", class: "service_photos") %></li>
 		<li><%= image_tag("rail_access.jpg", id: "rail_access", class: "service_photos") %></li>
 		<li><%= image_tag("welding.jpg", id: "welding", class: "service_photos") %></li>
