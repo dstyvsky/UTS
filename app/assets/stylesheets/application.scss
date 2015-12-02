@@ -99,10 +99,13 @@ li a{
 }
 
 .on_page{
+	/*
 	border: 2px dotted #F00;
+	*/
 	border-bottom: 0;
 	border-top: 0;
 	padding: 10px;
+	font-weight: bold;
 
 }
 
@@ -200,10 +203,10 @@ a img{
 #services_container{
 	width: 100%;
 
-	height: 500px;
+	height: 475px;
 }
 .test{
-	width: 90%;
+	width: 95%;
 
 	margin: auto;
 	margin-bottom: 20px;
@@ -222,15 +225,19 @@ a img{
 .selected_service_photo{
 	width: 100%;
 	height: 175px;
-
 	border: 2px solid black;
+
+
 }
 .service_photos{
-	border: 2px solid black;
+	border: 5px solid #FFFFF2;
 	width: 100%;
 	height: 175px;
+	/*
 	opacity: 0.5;
+*/
 }
+
 .service_label{
 	vertical-align: middle;
 	font-size: 15pt;
@@ -253,8 +260,8 @@ a img{
 	margin-left: 10%;
 	margin-right: 10%;
 	text-indent: 50px;
-	font-family: serif;
-	font-size: 16pt
+	font-family: Arial, "Helvetica Neue";
+	font-size: 14pt
 }
 .service_overview{
 	display: none;
@@ -327,6 +334,13 @@ hr {
 
 #all_location_container{
 	overflow: auto;
+}
+#about_paragraph{
+	margin-left: 10%;
+	margin-right: 10%;
+	text-indent: 50px;
+	font-family: Arial, "Helvetica Neue";
+	font-size: 14pt
 }
 
 /* Contact */
@@ -414,4 +428,29 @@ h4{
 
 .user p{
 	text-color: red;
+}
+
+.blogposts div{
+	border-left: 1px solid #323232;
+	border-opacity: 0.5;
+	padding: 30px;
+}
+
+#login_head{
+	text-align: center;
+	font-size: 20pt;
+	float: left;
+	margin-left: 20%;
+
+
+}
+.login_form{
+	float: left;
+
+	width:50%;
+	clear: both;
+}
+
+#login_button{
+	margin-top: 20px;
 }
