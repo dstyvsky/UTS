@@ -1,6 +1,8 @@
 <li id="blogpost-<%= blogpost.id %>">
-  <span class="user"><%= blogpost.user.name %></br></span>
-  <span class="content"><%= blogpost.content %></br></span>
+
+  <span class="user"><%= blogpost.user.name %></span><br>
+  <p></p>
+  <span class="content"><%= blogpost.content %></span>
   <span class="timestamp"></br>
     Posted <%= (blogpost.created_at) %>
     <% if logged_in? %>
