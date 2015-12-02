@@ -4,9 +4,10 @@
 		<ul id="header_list">
 			<li><%= link_to_unless_current "Services", root_path, :id => "services_button" do link_to "Services", root_path, :class => "on_page", :id => "services_button" end %></li>
 			
+			<li><%= link_to_unless_current "Locations", location_path, :id => "location_button" do link_to "Locations", location_path, :class => "on_page", :id => "location_button" end %></li>
+
 			<li><%= link_to_unless_current "Recent News", recent_news_path, :id => "recent_news_button" do link_to "Recent News", recent_news_path, :class => "on_page", :id => "recent_news_button" end %></li>
 
-			<li><%= link_to_unless_current "Locations", location_path, :id => "location_button" do link_to "Locations", location_path, :class => "on_page", :id => "location_button" end %></li>
 			
 			<li><%= link_to_unless_current "About us", about_us_path, :id => "about_us_button" do link_to "About us", about_us_path, :class => "on_page", :id => "about_us_button" end %></li>
 
