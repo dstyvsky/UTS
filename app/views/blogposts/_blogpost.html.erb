@@ -1,7 +1,7 @@
 <li id="blogpost-<%= blogpost.id %>">
-  <span class="user"><%= blogpost.user.name %></span>
-  <span class="content"><%= blogpost.content %></span>
-  <span class="timestamp">
+  <span class="user"><%= blogpost.user.name %></br></span>
+  <span class="content"><%= blogpost.content %></br></span>
+  <span class="timestamp"></br>
     Posted <%= (blogpost.created_at) %>
     <% if logged_in? %>
     	<%= link_to "delete", blogpost, method: :delete,
