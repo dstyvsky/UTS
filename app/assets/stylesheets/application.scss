@@ -76,6 +76,7 @@ hr{
 	margin-top: 20px;
 	text-align: center;	
 	width: 100%;
+	margin-bottom: 50px;
 }
 
 
@@ -92,6 +93,14 @@ li a{
 		color: black;
 		text-decoration: none;
 	}
+
+}
+
+.on_page{
+	border: 2px dotted #F00;
+	border-bottom: 0;
+	border-top: 0;
+	padding: 10px;
 
 }
 
