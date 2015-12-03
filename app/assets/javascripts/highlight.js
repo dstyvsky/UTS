@@ -50,7 +50,10 @@ $( document ).ready(function() {
     $('#all_location_container').addClass('selected');
   })
 
-  $('.more').readmore();
+
+  $('.more').readmore(
+      embedCSS: true;
+    );
 
 
  
