@@ -13,13 +13,14 @@
 
 
 
-  	<div class="timestamp"></br></div>
+  	<div class="timestamp"></br>
    	 Published <%= (blogpost.created_at) %>
 
     <% if logged_in? %>
     	<%= link_to "delete", blogpost, method: :delete,
     									data: {confirm: "You sure?" } %>
  	<% end %>
+ 	</div>
 
 </li>
 
