@@ -52,7 +52,7 @@ $( document ).ready(function() {
 
 
   $('.more').readmore(
-      embedCSS: true;
+      embedCSS: false;
     );
 
 
