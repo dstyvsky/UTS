@@ -1,4 +1,6 @@
 $( document ).ready(function() {
+  
+  $('.more').readmore();
 
 
   $('img').click(function(){
@@ -50,7 +52,6 @@ $( document ).ready(function() {
     $('#all_location_container').addClass('selected');
   })
 
-  $('.more').readmore();
 
  
 });
