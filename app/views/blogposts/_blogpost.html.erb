@@ -2,7 +2,11 @@
 
   <span class="user"><%= blogpost.user.name %></span><br>
   <p></p>
-  <div><span class="content"><%= simple_format(blogpost.content) %></span></div>
+  <div>
+  	<span 
+  		class="more"><%= simple_format(blogpost.content) %>
+  	</span>
+  </div>
   <span class="timestamp"></br>
     Posted <%= (blogpost.created_at) %>
     <% if logged_in? %>

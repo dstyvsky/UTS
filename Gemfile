@@ -33,6 +33,8 @@ gem 'bcrypt'
 
 gem 'jquery-turbolinks'
 
+gem 'readmorejs-rails'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
