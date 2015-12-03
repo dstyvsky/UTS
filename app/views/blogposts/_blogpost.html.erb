@@ -1,13 +1,29 @@
+
+
 <li id="blogpost-<%= blogpost.id %>">
 
-  <span class="user"><%= blogpost.user.name %></span><br>
-  <p></p>
-  <div><span class="content"><%= simple_format(blogpost.content) %></span></div>
-  <span class="timestamp"></br>
-    Posted <%= (blogpost.created_at) %>
+  <div class="user">Posted by <%= blogpost.user.name %></div><br>
+
+
+  	<span class="more">
+		<%= simple_format(blogpost.content) %>
+	</span>
+		  		
+
+
+
+
+  	<div class="timestamp"></br></div>
+   	 Published <%= (blogpost.created_at) %>
+
     <% if logged_in? %>
     	<%= link_to "delete", blogpost, method: :delete,
     									data: {confirm: "You sure?" } %>
  	<% end %>
-  </span>
+
 </li>
+
+
+
+
+

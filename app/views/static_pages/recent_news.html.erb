@@ -1,10 +1,16 @@
-
-<div class="col-md-8">
+<script src="/node_modules/readmore-js/readmore.min.js"></script>
+  <div class="col-md-8">
+    
     <% if Blogpost.any? %>
+
       <ul class="blogposts">
+
         <%= render Blogpost.all %>
+
       </ul>
+
     <% end %>
+
  </div>
 
  <% if logged_in? %>
@@ -21,5 +27,7 @@
   </div>
 
 <% else %>
-  <p id="edit_option">Please <%= link_to "log in", login_path %> to edit content</p>
+  <div>
+    <p id="edit_option">Please <%= link_to "log in", login_path %> to edit content</p>
+  </div>
 <% end %>

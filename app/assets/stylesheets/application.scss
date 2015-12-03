@@ -401,41 +401,11 @@ h4{
 	
 }
 
-.field{
-	margin-left: 10%;
-	margin-right: 10%;
-	width: 80%;
 
-}
 .row{
 	text-align: center;
 }
-.col-md-4{
-	width: 100%;
-}
 
-#blogpost_content{
-	width: 100%;
-	height: 200px;
-}
-#blogpost_button{
-	margin-right: 10%;
-	float: right;
-}
-#edit_option{
-	float: right;
-	margin-right: 10%;
-}
-
-.user p{
-	text-color: red;
-}
-
-.blogposts div{
-	border-left: 1px solid #323232;
-	border-opacity: 0.5;
-	padding: 30px;
-}
 
 #login_head{
 	text-align: center;
@@ -443,14 +413,8 @@ h4{
 	float: left;
 	margin-left: 20%;
 
-
 }
-.login_form{
-	float: left;
 
-	width:50%;
-	clear: both;
-}
 
 #login_button{
 	margin-top: 20px;
@@ -460,7 +424,50 @@ h4{
 	float:right;
 	margin-right: 20%;
 }
+
+.more{
+	border-left: 1px solid red;
+	padding-left: 20px;
+	margin-bottom: 30px;
+}
+.blogposts{
+	list-style: none;
+}
+
+
+/* Login Form and Update form*/
+#blogpost_button{
+	margin-right: 10%;
+	float: right;
+}
+#edit_option{
+	float: right;
+	margin-right: 10%;
+}
+
 #name{
 	float: left;
 	margin-left: 20%;
+}
+
+.login_form{
+	float: left;
+
+	width:50%;
+	clear: both;
+}
+
+.col-md-4{
+	width: 100%;
+}
+
+.field{
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 80%;
+
+}
+#blogpost_content{
+	width: 100%;
+	height: 400px;
 }
