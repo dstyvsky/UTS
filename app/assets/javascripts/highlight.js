@@ -51,8 +51,6 @@ $( document ).ready(function() {
   })
 
 
-  $('.more').readmore()
-
 
  
 });
