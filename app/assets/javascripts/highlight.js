@@ -1,6 +1,6 @@
 $( document ).ready(function() {
-  
-  $('.more').readmore();
+
+
 
 
   $('img').click(function(){
@@ -50,6 +50,16 @@ $( document ).ready(function() {
     $('.selected').addClass('faded_out');
     $('.selected').removeClass('selected');
     $('#all_location_container').addClass('selected');
+  })
+
+
+  $('.more_button').click(function(){
+    $('.start').addClass('hide');
+    $('.finish').removeClass('hide');
+  })
+  $('.less_button').click(function(){
+    $('.start').removeClass('hide');
+    $('.finish').addClass('hide');
   })
 
 
