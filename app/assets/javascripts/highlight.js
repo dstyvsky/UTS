@@ -51,9 +51,7 @@ $( document ).ready(function() {
   })
 
 
-  $('.more').readmore(
-      embedCSS: false;
-    );
+  $('.more').readmore()
 
 
  
