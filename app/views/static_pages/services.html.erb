@@ -2,11 +2,14 @@
 	"stripping", "packaging", "rail_access", "welding", "trucking"]) %>
 
 			<div id="all_services_container" class='selected'>
-				<%= render 'tabs/services_photos' %>
-				
-				<% for i in 0..7 %>
-					<%= render "service_descriptions/#{services[i]}" %>
-				<% end %>
+				<div id="service_folder">
+					<%= render 'tabs/services_photos' %>
+				</div>
+				<div id="description_folder">
+					
+					<%= render "service_descriptions/#{services[0]}" %>
+	
+				</div>
 			</div>
 
 

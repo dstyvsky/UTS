@@ -12,7 +12,7 @@
 	</ul>
 	
 	<ul id="last_four_photos">
-		<li><%= image_tag("transloading.jpg", id: "transloading", class: "service_photos") %></li>
+		<li><%= image_tag("transloading.jpg", id: "transloading", class: "service_photos transloading") %></li>
 		<li><%= image_tag("rail_access.jpg", id: "rail_access", class: "service_photos") %></li>
 		<li><%= image_tag("welding.jpg", id: "welding", class: "service_photos") %></li>
 		<li><%= image_tag("trucking.jpg", id: "trucking", class: "service_photos") %></li>
@@ -43,57 +43,70 @@
 -->
 <div id="services_container">
 	<div class="test">
-			<div class="pic_and_desc">
-				<%= image_tag("warehouse.jpg", id: "warehouse", class: "selected_service_photo") %>
-				<span class="service_label">Warehousing</span>
-
+			<%= link_to warehousing_path do %>
+				<div class="pic_and_desc">
+					<%= image_tag("warehouse.jpg", id: "warehouse", class: "service_photos") %>
+					<span class="service_label">Warehousing</span>
+				</div>
+			<% end %>
+			
 				
-			</div>
-
-			<div class="pic_and_desc">
-				<%= image_tag("drayage.jpg", id: "drayage", class: "service_photos") %>
-				<span class="service_label">Drayage</span>
-				
-			</div>
-
-			<div class="pic_and_desc">
-				<%= image_tag("packaging.jpg", id: "packaging", class: "service_photos") %>
-				<span class="service_label">Packaging</span>
-				
-			</div>
-
-			<div class="pic_and_desc">
-				<%= image_tag("rail_access.jpg", id: "rail_access", class: "service_photos") %>
-				<span class="service_label">Rail Access</span>
-				
-			</div>
+			<%= link_to drayage_path do %>
+				<div class="pic_and_desc">
+					<%= image_tag("drayage.jpg", id: "drayage", class: "service_photos") %>
+					<span class="service_label">Drayage</span>
+					
+				</div>
+			<% end %>
+			<%= link_to packaging_path do %>
+				<div class="pic_and_desc">
+					<%= image_tag("packaging.jpg", id: "packaging", class: "service_photos") %>
+					<span class="service_label">Packaging</span>
+					
+				</div>
+			<% end %>
+			<%= link_to rail_access_path do %>
+				<div class="pic_and_desc">
+					<%= image_tag("rail_access.jpg", id: "rail_access", class: "service_photos") %>
+					<span class="service_label">Rail Access</span>
+					
+				</div>
+			<% end %>
 
 	</div>
 	<div class="test">
+		<%= link_to transloading_path do %>	
 			<div class="pic_and_desc">
-				<%= image_tag("transloading.jpg", id: "transloading", class: "service_photos") %>
+				<%= image_tag("transloading.jpg", id: "transloading", class: "service_photos transloading") %>
 				<span class="service_label">Transloading</span>
 
 				
 			</div>
+		<% end %>
+		<%= link_to trucking_path do %>
 
 			<div class="pic_and_desc">
 				<%= image_tag("trucking.jpg", id: "trucking", class: "service_photos") %>
 				<span class="service_label">Trucking</span>
 				
 			</div>
+			<% end %>
+		<%= link_to welding_path do %>
 
 			<div class="pic_and_desc">
 				<%= image_tag("welding.jpg", id: "welding", class: "service_photos") %>
 				<span class="service_label">Welding</span>
 				
 			</div>
-
+		<% end %>
+		<%= link_to stripping_and_stuffing_path do %>
 			<div class="pic_and_desc">
 				<%= image_tag("stripping.jpg", id: "stripping", class: "service_photos") %>
 				<span class="service_label">Stripping and Stuffing</span>
 				
 			</div>
+
+		<% end %>
 
 	</div>
 </div>

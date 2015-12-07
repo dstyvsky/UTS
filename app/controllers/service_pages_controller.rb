@@ -1,0 +1,3 @@
+class ServicePagesController < ApplicationController
+
+end

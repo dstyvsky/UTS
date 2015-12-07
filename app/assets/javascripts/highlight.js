@@ -1,3 +1,5 @@
+
+/*
 $( document ).ready(function() {
 
 
@@ -9,11 +11,11 @@ $( document ).ready(function() {
 
   	$( this ).removeClass('service_photos');
   	$( this ).addClass( 'selected_service_photo');
-/*
+
   	$('html, body').animate({
         scrollTop: $("#header_container").offset().top
     }, 800);
-*/
+
   })
 
 
@@ -54,9 +56,9 @@ $( document ).ready(function() {
 
 
  
- 
+
 });
-/*
+
   $('#services_button').click(function(){
     $('html, body').animate({
          scrollTop: $('#header_container').offset().top

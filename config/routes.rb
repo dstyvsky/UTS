@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root                     'static_pages#services'
+  root                     'static_pages#home'
   get    'contacts'     =>  'contacts#new'
   get    'recent_news'  =>  'static_pages#recent_news'
   get    'about_us'     =>  'static_pages#about_us'
@@ -12,6 +12,18 @@ Rails.application.routes.draw do
 
   resources :blogposts,   only: [:create, :destroy]
   resources "contacts",   only: [:new, :create]
+
+
+  get    'transloading' =>  'service_pages#transloading'
+  get    'warehousing'  =>  'service_pages#warehousing'
+  get    'drayage'      =>  'service_pages#drayage'
+  get    'packaging'    =>  'service_pages#packaging'
+  get    'rail_access'  =>  'service_pages#rail_access'
+  get    'trucking'     =>  'service_pages#trucking'
+  get    'welding'      =>  'service_pages#welding'
+  get    'stripping_and_stuffing'    =>  'service_pages#stripping'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

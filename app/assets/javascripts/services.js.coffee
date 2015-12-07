@@ -1,4 +1,4 @@
-
+###
 
 
 $(document).on "page:change", ->
@@ -9,7 +9,7 @@ $(document).on "page:change", ->
 		$('#warehouse_container').fadeIn(0)
 
 
-	$('#transloading').click ->
+	$('.transloading').click ->
 		$('.service_overview').fadeOut(0)
 		$('#transloading_container').fadeIn(0)
 
@@ -49,3 +49,4 @@ $(document).on "page:change", ->
 
 
 
+###
