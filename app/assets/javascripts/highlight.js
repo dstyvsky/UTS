@@ -53,16 +53,7 @@ $( document ).ready(function() {
   })
 
 
-  $('.more_button').click(function(){
-    $('.start').addClass('hide');
-    $('.finish').removeClass('hide');
-  })
-  $('.less_button').click(function(){
-    $('.start').removeClass('hide');
-    $('.finish').addClass('hide');
-  })
-
-
+ 
  
 });
 /*

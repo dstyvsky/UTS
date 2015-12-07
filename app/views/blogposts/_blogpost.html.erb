@@ -3,19 +3,27 @@
   <span class="user"><%= blogpost.user.name %></span><br>
   <p></p>
   <div>
-  	<span class="start">
-  		<% if blogpost.content.length > 500 %>
-  			<%= truncate(blogpost.content, length: 500) %><a href="#" class="more_button">Continue Reading?</a>
-  		<% else %>
-  			<% simple_format(blogpost.content) %>
-  		<% end %>
+  	<span class="start<%= blogpost.id %>">
+  			<%= truncate(blogpost.content, length: 500) %><a href="#" onclick="return false;" class="more_button<%= blogpost.id %>">Continue Reading?</a>
   	</span>
 
-  	<span class="finish hide">
-  		<%= simple_format(blogpost.content) %><a href="#" class="less_button">...Show Less?</a>
-
+  	<span class="finish<%= blogpost.id %> hide">
+  		<%= simple_format(blogpost.content) %><a href="#" onclick="return false;" class="less_button<%= blogpost.id %>">...Show Less?</a>
   	</span>
+  	<script>
+  	$( document ).ready(function() {
+	  	$('.more_button<%=blogpost.id%>').click(function(){
+		    $('.start<%=blogpost.id%>').addClass('hide');
+		    $('.finish<%= blogpost.id %>').removeClass('hide');
+	  	})
 
+	  	$('.less_button<%=blogpost.id%>').click(function(){
+	  		$('.finish<%= blogpost.id %>').addClass('hide');
+	  		$('.start<%= blogpost.id %>').removeClass('hide');
+	  	})
+
+	 });
+  	</script>
   </div>
   <span class="timestamp"></br>
     Posted <%= (blogpost.created_at) %>
