@@ -21,51 +21,55 @@
 -->
 
 
+<nav class="navbar navbar-fixed-top">
 
-<ul class="nav nav-pills">
-<li> <%= link_to "UTS", root_path, class: "active" %></li>
-<li class="dropdown">
-  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Services <b class="caret"></b></a>
-  <ul class="dropdown-menu" id="menu1">
-    <!--
-    <li>
-        <a href="#">2-level Menu <i class="icon-arrow-right"></i></a>
-        <ul class="dropdown-menu sub-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li class="nav-header">Nav header</li>
-            <li><a href="#">Separated link</a></li>
-            <li><a href="#">One more separated link</a></li>
+
+      <ul class="nav nav-tabs">
+      <li> <%= link_to "UTS", root_path, class: "active" %></li>
+      <li class="dropdown">
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Services <b class="caret"></b></a>
+        <ul class="dropdown-menu" id="menu1">
+          <!--
+          <li>
+              <a href="#">2-level Menu <i class="icon-arrow-right"></i></a>
+              <ul class="dropdown-menu sub-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+              </ul>
+          </li>
+          -->
+          <li><%= link_to "Warehousing", warehousing_path %></li>
+          <li><%= link_to "Drayage", drayage_path %></li>
+          <li><%= link_to "Packaging", packaging_path %></li>
+          <li><%= link_to "Rail Access", rail_access_path %></li>
+          <li><%= link_to "Transloading", transloading_path %></li>
+          <li><%= link_to "Trucking", trucking_path %></li>
+          <li><%= link_to "Welding", welding_path %></li>
+          <li><%= link_to "Stripping and Stuffing", stripping_and_stuffing_path %></li>
+          <!--
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        -->
         </ul>
-    </li>
-    -->
-    <li><%= link_to "Warehousing", warehousing_path %></li>
-    <li><%= link_to "Drayage", drayage_path %></li>
-    <li><%= link_to "Packaging", packaging_path %></li>
-    <li><%= link_to "Rail Access", rail_access_path %></li>
-    <li><%= link_to "Transloading", transloading_path %></li>
-    <li><%= link_to "Trucking", trucking_path %></li>
-    <li><%= link_to "Welding", welding_path %></li>
-    <li><%= link_to "Stripping and Stuffing", stripping_and_stuffing_path %></li>
-    <!--
-    <li class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-  -->
-  </ul>
-</li>
-<li class="dropdown">
-  <%= link_to "Locations", location_path %>
-</li>
+      </li>
+      <li class="dropdown">
+        <%= link_to "Locations", location_path %>
+      </li>
 
-<li class="dropdown">
-  <%= link_to "Recent News", recent_news_path %>
-</li>
-<li class="dropdown">
-  <%= link_to "About us", about_us_path %>
-</li>
-<li class="dropdown">
-  <%= link_to "Contact", contacts_path %>
-</li>
-</ul>
+      <li class="dropdown">
+        <%= link_to "Recent News", recent_news_path %>
+      </li>
+      <li class="dropdown">
+        <%= link_to "About us", about_us_path %>
+      </li>
+      <li class="dropdown">
+        <%= link_to "Contact", contacts_path %>
+      </li>
+      </ul>
+
+</nav>

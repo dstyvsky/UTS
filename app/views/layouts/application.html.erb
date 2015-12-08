@@ -17,6 +17,7 @@
 <body>
 
 			<div id="background-screen">
+				<%= render 'layouts/header' %>
 				
 				<div id="logo_container">
 					
@@ -30,7 +31,7 @@
 				</div>
 
 
-				<%= render 'layouts/header' %>
+				
 				<% flash.each do |message_type, message| %>
 			    <div class="alert alert-<%= message_type %>"><%= message %></div>
 			    <% end %>
