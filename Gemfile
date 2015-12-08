@@ -35,6 +35,9 @@ gem 'jquery-turbolinks'
 
 gem 'readmorejs-rails'
 
+gem 'flexslider'
+
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

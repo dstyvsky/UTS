@@ -1,9 +1,16 @@
 
+
+jQuery(document).ready(function($) {
+      $(window).load(function() {
+      $('.flexslider').flexslider({
+        animation: "slide",
+        directionNav: true,
+        slideshow: true,
+      })
+         });
+    });
+
 /*
-$( document ).ready(function() {
-
-
-
 
   $('img').click(function(){
   	$('.selected_service_photo').addClass('service_photos');
