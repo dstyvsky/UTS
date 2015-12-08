@@ -17,7 +17,6 @@
 //= require jquery.flexslider
 //= require_tree .
 
-//= require turbolinks
 
 
 

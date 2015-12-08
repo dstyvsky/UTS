@@ -1,15 +1,5 @@
 
 
-jQuery(document).ready(function($) {
-      $(window).load(function() {
-      $('.flexslider').flexslider({
-        animation: "slide",
-        directionNav: true,
-        slideshow: true,
-      })
-         });
-    });
-
 /*
 
   $('img').click(function(){
