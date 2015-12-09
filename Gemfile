@@ -35,7 +35,6 @@ gem 'jquery-turbolinks'
 
 gem 'readmorejs-rails'
 
-gem 'flexslider'
 
 
 

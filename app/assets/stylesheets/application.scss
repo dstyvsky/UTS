@@ -122,7 +122,7 @@ footer {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	margin-top: 65px;
-	margin-bottom: 65px;
+	margin-bottom: 55px;
 
 
 }
@@ -208,30 +208,38 @@ a img{
 #service_folder{
 
 	display: inline;
-	width: 50%;
+	width: 55%;
 	float: left;
 
 	text-align: center;
 	background-color: #FFEECA;
+	margin-left: 2.5%;
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
+
+	border-radius: 25px;
+	box-shadow: 10px 10px  5px #888888;
 
 }
 
 
 .full_photo{
 	display: inline-block;
-	width: 90%;
+	width: 92.5%;
 	height: 300px;
 
 	margin-bottom: 20px;
 	overflow: hidden;
+	border: solid black 1px;
 
 
 }
 #description_folder{
 	display: inline;
-	width: 40%;
+	width: 35%;
 	float: right;
-	margin-right: 5%;
+	margin-right: 3%;
+	
 }
 #services_container{
 	width: 100%;
@@ -254,6 +262,7 @@ a img{
 	display: inline-block;
 	margin: auto;
 	text-align: center;
+	vertical-align: top;
 
 }
 
@@ -269,6 +278,7 @@ a img{
 
 	width: 100%;
 	height: 90px;
+	border: solid black 1px;
 	/*
 	opacity: 0.5;
 */
@@ -301,12 +311,15 @@ a img{
 
 
 	font-family: Arial, "Helvetica Neue";
-	font-size: 14pt
+	font-size: 14pt;
+	overflow: hidden;
+		text-shadow: 1px 1px #888888;
 }
 
 .firstWord{
 	font-weight: bold;
-	font-size: 18pt;
+	font-size: 16pt;
+
 }
 
 
@@ -595,38 +608,75 @@ h4{
 
 
 
-
-.flex-viewport{
-	height: 100%;
-}
-
-/* external css: flickity.css */
-
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 body { font-family: sans-serif; }
-
-.gallery {
-  background: #EEE;
+#myCarousel{
+	box-shadow: 0px 10px 5px #888, 0px -10px 5px #888;
 }
 
-.gallery-cell {
-  width: 100%;
-  height: 200px;
-  margin-right: 10px;
-  background: #8C8;
-  counter-increment: gallery-cell;
+.item{
+	width: 100%;
+	height: 300px;
+}
+.display{
+
+	max-height: 100%;
+	width: 100%;
+}
+.carousel-inner{
+	border: black solid 2px;
 }
 
-/* cell number */
-.gallery-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(gallery-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
+/* front page */
+
+.front_text{
+	width: 40%;
+	float: left;
+	margin-left: 5%;
+	margin-top: 75px;
+}
+.bottom{
+	width: 100%;
+	height: 100%;
+}
+
+.right_stack{
+	width: 45%;
+	float: right;
+	margin-right: 5%;
+
+}
+.box_one{
+	background-color: #499a50;
+	width: 95%;
+	height: 200px;
+	box-shadow: 10px 10px  5px #888888;
+
+	margin-top: 100px;
+	border-radius: 25px;
+	opacity: 0.5;
+}
+.box_two{
+	background-color: #3D3C1D;
+	width: 95%;
+	height: 200px;
+	box-shadow: 10px 10px  5px #888888;
+
+	margin-top: 50px;
+	border-radius: 25px;
+	opacity: 0.5;
+}
+.box_three{
+	background-color: #511536;
+	width: 95%;
+	height: 200px;
+	box-shadow: 10px 10px  5px #888888;
+
+	margin-top: 50px;
+	border-radius: 25px;
+	opacity: 0.5;
 }

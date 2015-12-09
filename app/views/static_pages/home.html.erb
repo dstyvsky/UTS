@@ -1,27 +1,55 @@
-<!-- Place somewhere in the <body> of your page 
-<div class="flexslider">
-  <ul class="slides">
-    <li>
-      <%= image_tag("warehouse.jpg", class: "banner_image") %>
-    </li>
-    <li>
-      <%= image_tag("drayage.jpg", class: "banner_image") %>
-    </li>
-    <li>
-      <%= image_tag("transloading.jpg", class: "banner_image") %>
-    </li>
-  </ul>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <%= image_tag("drayage.jpg", class: "display") %>
+    </div>
+
+    <div class="item">
+      <%= image_tag("packaging.jpg", class: "display") %>
+    </div>
+
+    <div class="item">
+      <%= image_tag("rail_access.jpg", class: "display") %>
+    </div>
+
+    <div class="item">
+      <%= image_tag("transloading.jpg", class: "display") %>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
--->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.1/flickity.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.1/flickity.pkgd.js"></script>
+<div id="bottom">
+  <div class="front_text">
+    <%= render "shared/lorem" %>
+  </div>
 
-
-<div class="gallery js-flickity">
-  <div class="gallery-cell"></div>
-  <div class="gallery-cell"></div>
-  <div class="gallery-cell"></div>
-  <div class="gallery-cell"></div>
-  <div class="gallery-cell"></div>
+  <div class="right_stack">
+    <div class="box_one">
+    </div>
+    <div class="box_two">
+    </div>
+    <div class="box_three">
+    </div>
+  </div>
 </div>
+
+
